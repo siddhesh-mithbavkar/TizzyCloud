@@ -1,0 +1,59 @@
+@media only screen and (max-width: 767px) {
+  .hosting-plan-cards .card-pricing {
+    width: 100%;
+  }
+
+  .accordion {
+    width: 100% !important;
+  }
+
+  .banner-btn {
+    background-color: #fff89e;
+    padding: 10px 18px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .wrapper .icon span {
+    height: 50px;
+    width: 50px;
+  }
+
+  .wrapper .icon span i {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .wrapper .icon .tooltip {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    gap: 0;
+  }
+
+  .wrapper .icon span {
+    height: 45px;
+    width: 45px;
+  }
+
+  .wrapper .icon span i {
+    font-size: 18px;
+    line-height: 45px;
+  }
+
+  .wrapper .icon .tooltip {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
