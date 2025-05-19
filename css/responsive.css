@@ -40,6 +40,12 @@
 @media (max-width: 480px) {
   .wrapper {
     gap: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper .icon {
+    margin: 6px;
   }
 
   .wrapper .icon span {
@@ -55,5 +61,15 @@
   .wrapper .icon .tooltip {
     font-size: 14px;
     padding: 5px 10px;
+  }
+
+  .facilities-cards .card {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+  .facilities-cards .card {
+    height: 300px;
   }
 }
