@@ -16,6 +16,19 @@
     margin: 0 auto;
   }
 
+  .title .premium::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\e682";
+    position: absolute;
+    color: yellow;
+    top: -20px;
+    right: -8px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
+
   .wrapper {
     gap: 15px;
     padding: 10px;
@@ -68,7 +81,7 @@
   }
 }
 
-@media only screen and (min-width:768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .facilities-cards .card {
     height: 300px;
   }
