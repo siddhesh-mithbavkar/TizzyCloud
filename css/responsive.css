@@ -62,16 +62,25 @@
   }
 
   .mob-floating-request-call {
-    display: block;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     left: 3%;
-    bottom: 20%;
+    bottom: 3%;
     background-color: coral;
     color: #fff;
     border-radius: 50px;
     text-align: center;
     z-index: 999999;
-    font-size: 18px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+
+  .mob-floating-request-call i{
+    font-size: 22px;
   }
 }
 
