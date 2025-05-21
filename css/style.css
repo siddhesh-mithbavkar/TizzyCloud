@@ -82,6 +82,10 @@ body {
 
 /* request call back */
 
+.mob-floating-request-call{
+  display: none;
+}
+
 .vertical-button {
   position: fixed;
   top: 50%;

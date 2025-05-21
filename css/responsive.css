@@ -3,14 +3,18 @@
     width: 100%;
   }
 
+  .title{
+    font-size: 24px;
+  }
+
   .accordion {
     width: 100% !important;
   }
 
   .banner-btn {
     background-color: #fff89e;
-    padding: 10px 18px;
-    font-size: 18px;
+    padding: 5px 8px;
+    font-size: 16px;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -49,8 +53,21 @@
     padding: 6px 12px;
   }
 
-  .vertical-button{
+  .vertical-button {
     display: none;
+  }
+
+  .mob-floating-request-call {
+    display: block;
+    position: fixed;
+    left: 3%;
+    bottom: 20%;
+    background-color: coral;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 999999;
+    font-size: 18px;
   }
 }
 
@@ -105,5 +122,5 @@
   .wrapper .icon span i {
     line-height: 43px;
     font-size: 20px;
-}
+  }
 }
