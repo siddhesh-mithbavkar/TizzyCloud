@@ -48,6 +48,10 @@
     font-size: 16px;
     padding: 6px 12px;
   }
+
+  .vertical-button{
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {

@@ -80,6 +80,41 @@ body {
   align-items: center;
 }
 
+/* request call back */
+
+.vertical-button {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  background-color: #feda7e;
+  color: #000;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 12px 0 0 12px;
+  font-size: 16px;
+  box-shadow: 0 0 10px #feda7e, 0 0 20px #feda7e;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #feda7e, 0 0 10px #feda7e;
+  }
+  to {
+    box-shadow: 0 0 15px #feda7e, 0 0 30px #feda7e;
+  }
+}
+
+.vertical-button:hover {
+  background-color: #fec564;
+}
+
 /* Banner CSS */
 
 #hero-banner {
@@ -89,9 +124,10 @@ body {
 }
 
 .banner-btn {
-  background-color: #fff89e;
+  background-color: #ffc107;
   padding: 8px 16px;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .banner-btn:hover {
