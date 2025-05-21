@@ -82,7 +82,7 @@ body {
 
 /* request call back */
 
-.mob-floating-request-call{
+.mob-floating-request-call {
   display: none;
 }
 
@@ -172,6 +172,10 @@ body {
   width: 40px;
   height: 40px;
   z-index: 1;
+}
+
+.desc {
+  font-size: 18px;
 }
 
 .wrapper {
