@@ -17,7 +17,7 @@
 
   .banner-btn {
     background-color: #fff89e;
-    padding: 5px 8px;
+    padding: 8px;
     font-size: 16px;
     text-align: center;
     display: block;
@@ -35,6 +35,10 @@
     width: 40px;
     height: 40px;
     z-index: 1;
+  }
+
+  .title .premium::before {
+    bottom: 10px;
   }
 
   .wrapper {
@@ -79,7 +83,7 @@
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
   }
 
-  .mob-floating-request-call i{
+  .mob-floating-request-call i {
     font-size: 22px;
   }
 }
@@ -110,8 +114,16 @@
     padding: 5px 10px;
   }
 
+  .facilities-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .facilities-cards .card {
     height: 250px;
+    width: 80%;
   }
 }
 

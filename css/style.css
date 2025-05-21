@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   list-style: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
+}
+
+h1,
+h2,
+h3,
+.btn {
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -21,6 +30,7 @@ body {
   font-weight: 400;
   color: #000;
   height: max-content;
+  font-family: "Inter", sans-serif;
 }
 
 /* Top Section */
@@ -56,22 +66,30 @@ body {
 }
 
 .create-accnt {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #4f46e5;
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .create-accnt:hover {
   background-color: #fff;
-  border: 1px solid #007bff;
+  border: 1.5px solid #4f46e5;
+  color: #4f46e5;
 }
 
 .sign-in {
+  background-color: #14b8a6;
+  color: white;
+  border-radius: 50px;
   border: 1px solid #007bff;
+  transition: background-color 0.3s ease;
 }
 
 .sign-in:hover {
-  background-color: #007bff;
-  color: #fff;
+  border: 1px solid #14b8a6;
+  background-color: #fff;
+  color: #14b8a6;
 }
 
 .cart {
@@ -124,19 +142,50 @@ body {
 #hero-banner {
   /* margin-top: 65px; */
   background: #4826f9;
-  background: linear-gradient(90deg, #4826f9, #3325b7);
+  /* background: linear-gradient(90deg, #4826f9, #3325b7); */
+  background-image: radial-gradient(
+      circle at 17% 77%,
+      rgba(17, 17, 17, 0.04) 0%,
+      rgba(17, 17, 17, 0.04) 50%,
+      rgba(197, 197, 197, 0.04) 50%,
+      rgba(197, 197, 197, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 26% 17%,
+      rgba(64, 64, 64, 0.04) 0%,
+      rgba(64, 64, 64, 0.04) 50%,
+      rgba(244, 244, 244, 0.04) 50%,
+      rgba(244, 244, 244, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 44% 60%,
+      rgba(177, 177, 177, 0.04) 0%,
+      rgba(177, 177, 177, 0.04) 50%,
+      rgba(187, 187, 187, 0.04) 50%,
+      rgba(187, 187, 187, 0.04) 100%
+    ),
+    linear-gradient(19deg, rgb(28, 117, 250), rgb(34, 2, 159));
 }
 
 .banner-btn {
   background-color: #ffc107;
-  padding: 8px 16px;
+  color: #000;
+  padding: 10px 20px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .banner-btn:hover {
   background-color: #fff;
   color: #000;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .title {
@@ -155,7 +204,7 @@ body {
   content: "";
   border-bottom: 8px solid lightgreen;
   position: absolute;
-  bottom: 5px;
+  bottom: 14px;
   left: 0;
   width: 100%;
   z-index: -1;
